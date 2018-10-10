@@ -1,14 +1,18 @@
 # Logs Analysis Project
 
-This project sets up a PostgreSQL database for a fictional news website.
+This project sets up a PostgreSQL database for a fictional news website and answers questions related to it.
 
 
 ## Getting Started
 
+
+
 ### The database
 
-articles - This table contains a database of all the articles published
-authors -  This table contains a database of all the authors including their name
+articles - This table contains a database of all the articles published.
+
+authors -  This table contains a database of all the authors including their name.
+
 log - This table has a database row for each time a reader access a web page.
 
 ### The Questions
@@ -21,8 +25,11 @@ log - This table has a database row for each time a reader access a web page.
 ## Installation
 
 1. Set up a virtual machine using Vagrant and VirtualBox
+
   Install VirtualBox https://www.virtualbox.org/wiki/Download_Old_Builds_5_1
+  
   Install Vagrant https://www.vagrantup.com/downloads.html
+  
   for further help, visit https://medium.com/@JohnFoderaro/how-to-set-up-a-local-linux-environment-with-vagrant-163f0ba4da77
 
 2. From your terminal, inside the vagrant subdirectory, run the command
@@ -38,7 +45,7 @@ log - This table has a database row for each time a reader access a web page.
 
 5. Clone or download the Github Repository to your vagrant directory
 
-6.  Add 'newsdata.sql' database to the vagrant directory from       https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
+6.  Unzip 'newsdata.sql' from cloned repository or download it from the below link to your vagrant directory       https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
 
 7. Run the file 'loganalysis.py' as
     `python loganalysis.py`
@@ -47,9 +54,9 @@ log - This table has a database row for each time a reader access a web page.
     `psql -d news -f newsdata.sql`
 
 
-#h2 Additional Information
+## Additional Information
 
-The views that are used in this project are:
+The Views for the database that are used in this project are:
 
 `create view ipcounter as select path, count(ip)
  as vw from log group by path order by vw desc;`
