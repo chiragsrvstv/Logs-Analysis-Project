@@ -26,11 +26,11 @@ log - This table has a database row for each time a reader access a web page.
 
 1. Set up a virtual machine using Vagrant and VirtualBox
 
-  Install VirtualBox https://www.virtualbox.org/wiki/Download_Old_Builds_5_1
+        Install VirtualBox https://www.virtualbox.org/wiki/Download_Old_Builds_5_1
+    
+        Install Vagrant https://www.vagrantup.com/downloads.html
   
-  Install Vagrant https://www.vagrantup.com/downloads.html
-  
-  for further help, visit https://medium.com/@JohnFoderaro/how-to-set-up-a-local-linux-environment-with-vagrant-163f0ba4da77
+        for further help, visit https://medium.com/@JohnFoderaro/how-to-set-up-a-local-linux-environment-with-vagrant-163f0ba4da77
 
 2. From your terminal, inside the vagrant subdirectory, run the command
   `vagrant up`. This will cause Vagrant to download the Linux operating system
