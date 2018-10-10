@@ -6,11 +6,13 @@ This project sets up a PostgreSQL database for a fictional news website.
 ## Getting Started
 
 ### The database
+
 articles - This table contains a database of all the articles published
 authors -  This table contains a database of all the authors including their name
 log - This table has a database row for each time a reader access a web page.
 
 ### The Questions
+
 1. What are the most popular three articles of all time?
 2. Who are the most popular article authors of all time?
 3. On which days did more than 1% of requests lead to errors?
@@ -21,8 +23,7 @@ log - This table has a database row for each time a reader access a web page.
 1. Set up a virtual machine using Vagrant and VirtualBox
   Install VirtualBox https://www.virtualbox.org/wiki/Download_Old_Builds_5_1
   Install Vagrant https://www.vagrantup.com/downloads.html
-
-  for help, visit https://medium.com/@JohnFoderaro/how-to-set-up-a-local-linux-environment-with-vagrant-163f0ba4da77
+  for further help, visit https://medium.com/@JohnFoderaro/how-to-set-up-a-local-linux-environment-with-vagrant-163f0ba4da77
 
 2. From your terminal, inside the vagrant subdirectory, run the command
   `vagrant up`. This will cause Vagrant to download the Linux operating system
@@ -37,13 +38,14 @@ log - This table has a database row for each time a reader access a web page.
 
 5. Clone or download the Github Repository to your vagrant directory
 
-6.  Add 'newsdata.sql' database to the directory from       https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
+6.  Add 'newsdata.sql' database to the vagrant directory from       https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip
 
-7. Run the file 'loganalysis.py'
+7. Run the file 'loganalysis.py' as
     `python loganalysis.py`
 
-8. To explore the database 'newsdata.sql'
+8. To explore the database 'newsdata.sql' run
     `psql -d news -f newsdata.sql`
+
 
 #h2 Additional Information
 
